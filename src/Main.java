@@ -5,6 +5,7 @@ public class Main {
         System.out.println("Уважаемый наставник представляю Вашему вниманию домашнее задание " +
                 "к уроку за 9 февраля 2026г. ");
         System.out.println();
+
         System.out.println("Задача №1 ");
         int clientOS = 0;
         if (clientOS == 0) {
