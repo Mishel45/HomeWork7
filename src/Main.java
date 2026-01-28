@@ -51,10 +51,10 @@ public class Main {
         int delivery = 1;
         if (deliveryDistance < 20 && deliveryDistance >= 0) {
             System.out.println("Потребуется дней: " + delivery);
-        } else if (deliveryDistance < 60 && deliveryDistance > 20) {
+        } else if (deliveryDistance < 60 && deliveryDistance >= 20) {
             delivery = delivery + 1;
             System.out.println("Потребуется дней: " + delivery);
-        } else if (deliveryDistance < 100 && deliveryDistance > 60) {
+        } else if (deliveryDistance < 100 && deliveryDistance >= 60) {
             delivery = delivery + 2;
             System.out.println("Потребуется дней: " + delivery);
         } else {
