@@ -2,7 +2,8 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Уважаемый наставник представляю Вашему вниманию домашнее задание " + "к уроку за 9 февраля 2026г. ");
+        System.out.println("Уважаемый наставник представляю Вашему вниманию домашнее задание " + "к уроку за " +
+                "9 февраля 2026г. ");
         System.out.println();
 
         System.out.println("Задача №1 ");
@@ -30,13 +31,9 @@ public class Main {
         System.out.println("Задача №3 ");
         int year = 2021;
         boolean leap = false;
-        if (year > 1584 && year % 4 == 0) {
-            if (year % 100 == 0 && year % 400 != 0) {
-                leap = false;
-            } else {
-                leap = true;
-            }
-        } else {
+        if (year > 1584 && year % 4 == 0 && year % 100 != 0 || year % 400 == 0 && year > 1584) {
+            leap = true;
+        }else {
             leap = false;
         }
         if (leap) {
